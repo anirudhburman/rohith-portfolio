@@ -9,7 +9,7 @@ export default function Hero() {
           </span>
           <div className="hero-meta">
             <div><b>Based in</b><br />Bengaluru, IN</div>
-            <div><b>Working remotely</b><br />since 2024</div>
+            <div><b>Looking for</b><br />my first role</div>
           </div>
         </div>
 

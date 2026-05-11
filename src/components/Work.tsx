@@ -1,5 +1,11 @@
 import type { HomeCase } from '../data';
 
+const base = import.meta.env.BASE_URL;
+const thumbSvg: Record<string, string> = {
+  h2o: `${base}hydrotrack.svg`,
+  gor: `${base}goround.svg`,
+};
+
 interface WorkProps {
   cases: HomeCase[];
   navigate: (route: string, sectionId?: string, caseId?: string) => void;
@@ -29,9 +35,9 @@ export default function Work({ cases, navigate }: WorkProps) {
               onKeyDown={(e) => { if (e.key === 'Enter') navigate('case', undefined, c.id); }}
             >
               <div className={`case-thumb ${c.thumb}`}>
-                <div className="floats"></div>
-                <div className="glyph">{c.glyph}</div>
-                <h3>{c.title}</h3>
+                {thumbSvg[c.thumb] && (
+                  <img className="floats" src={thumbSvg[c.thumb]} alt="" aria-hidden="true" />
+                )}
               </div>
               <div className="case-body">
                 <div className="case-eyebrow">

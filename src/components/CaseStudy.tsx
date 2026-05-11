@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { caseStudies, type Block, type CardItem, type MetricItem, type PersonaData, type RoadmapItem, type CaseStudyData } from '../data';
+import { caseStudies, type Block, type CardItem, type DesignProcessData, type KddItem, type KeyInsightData, type MetricItem, type PersonaData, type ProblemSolutionData, type RoadmapItem, type CaseStudyData } from '../data';
 
 interface CaseStudyProps {
   caseId: string;
@@ -167,6 +167,26 @@ function renderBlock(b: Block, i: number): React.ReactNode {
           <h5>{p.name}</h5>
           <div className="persona-role">{p.role}</div>
           <div className="persona-quote">"{p.quote}"</div>
+          {(p.goals || p.frustrations) && (
+            <div className="persona-gf">
+              {p.goals && (
+                <div className="persona-gf-col">
+                  <h6>Goals</h6>
+                  <ul>
+                    {p.goals.map((g, j) => <li key={j}>{g}</li>)}
+                  </ul>
+                </div>
+              )}
+              {p.frustrations && (
+                <div className="persona-gf-col">
+                  <h6>Frustrations</h6>
+                  <ul>
+                    {p.frustrations.map((f, j) => <li key={j}>{f}</li>)}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     );
@@ -205,6 +225,99 @@ function renderBlock(b: Block, i: number): React.ReactNode {
         }
         {b.cap && <figcaption className="cs-figure-cap">{b.cap}</figcaption>}
       </figure>
+    );
+  }
+  if (b.t === 'kdd') {
+    return (
+      <div key={i} className="kdd-grid">
+        {(b.c as KddItem[]).map((item, j) => {
+          const labels = item.variant === 'cs'
+            ? { top: 'Challenge', bottom: 'Solution' }
+            : { top: 'Principle', bottom: 'Decision' };
+          return (
+            <div key={j} className={`kdd-card kdd-card--${item.variant}`}>
+              <span className="kdd-pill kdd-pill--top">{labels.top}</span>
+              <h4 className="kdd-heading">{item.topHeading}</h4>
+              <p className="kdd-sub">{item.topSub}</p>
+              <span className="kdd-pill kdd-pill--bottom">{labels.bottom}</span>
+              <p className="kdd-body">{item.bottomBody}</p>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+  if (b.t === 'problem-solution') {
+    const ps = b.c as ProblemSolutionData;
+    return (
+      <div key={i} className="ps-block">
+        {b.images && b.images.length > 0 && (
+          <div className="ps-images">
+            {b.images.map((src, j) => (
+              <img key={j} src={src} alt="" className="ps-image" />
+            ))}
+          </div>
+        )}
+        <div className="ps-cards">
+          <div className="ps-card ps-card--problem">
+            <div className="ps-card-head">
+              <span className="ps-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A0522D" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 3a4 4 0 0 0-4 4v1H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-2V7a4 4 0 0 0-4-4z" />
+                  <path d="M9 13h6M9 17h4" />
+                </svg>
+              </span>
+              <span className="ps-card-title">Problem</span>
+            </div>
+            <p className="ps-card-body">{ps.problem}</p>
+          </div>
+          <div className="ps-card ps-card--solution">
+            <div className="ps-card-head">
+              <span className="ps-card-icon ps-card-icon--check" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" fill="#2F8A40" />
+                  <path d="M7.5 12.5l3 3 6-6.5" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+              <span className="ps-card-title">Solution</span>
+            </div>
+            <p className="ps-card-body">
+              {ps.solutionLead && <strong>{ps.solutionLead} </strong>}
+              {ps.solution}
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  if (b.t === 'design-process') {
+    const dp = b.c as DesignProcessData;
+    return (
+      <div key={i} className="dp-block">
+        {dp.rows.map((row, ri) => (
+          <div key={ri} className="dp-row" data-count={row.length}>
+            {row.map((phase, pi) => (
+              <div key={pi} className="dp-card">
+                <h4 className="dp-card-title">{phase.title}</h4>
+                <ul className="dp-card-list">
+                  {phase.items.map((it, ii) => <li key={ii}>{it}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+  }
+  if (b.t === 'key-insight') {
+    const ki = b.c as KeyInsightData;
+    return (
+      <div key={i} className="key-insight">
+        <h3 className="key-insight-heading">{ki.heading}</h3>
+        <ul className="key-insight-list">
+          {ki.items.map((it, j) => <li key={j}>{it}</li>)}
+        </ul>
+      </div>
     );
   }
   if (b.t === 'ui-screens' && b.images) {

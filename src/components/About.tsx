@@ -17,11 +17,11 @@ export default function About() {
 
             <div className="factgrid">
               <div className="fact">
-                <div className="num">2+</div>
-                <div className="lab">years self-studying design</div>
+                <div className="num">6+</div>
+                <div className="lab">months self-studying design</div>
               </div>
               <div className="fact">
-                <div className="num">8</div>
+                <div className="num">4</div>
                 <div className="lab">end-to-end mock projects</div>
               </div>
               <div className="fact">
