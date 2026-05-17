@@ -106,7 +106,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
     thumb: 'h2o',
     glyph: '💧',
     heroImg: 'hydrotrack/h2.svg',
-    lede: 'A health-tech mobile app that makes daily hydration effortless through personalised goals, smart logging, and weekly habit insights.',
+    lede: 'A health-tech mobile app that makes daily hydration effortless through personalized goals, smart logging, and weekly habit insights.',
     tags: ['UX/UI', 'Mobile', 'Figma', 'Health-tech'],
     meta: [
       { k: 'Role', v: 'UX/UI Designer (solo)' },
@@ -121,7 +121,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
         title: 'Overview',
         body: [
           { t: 'p', c: 'HydroTrack is a mobile hydration app designed to help busy professionals build a consistent water-drinking habit with minimal effort. It addresses a key problem: <strong>people know hydration matters but often forget</strong> — and most don\'t know what their ideal daily intake actually is.' },
-          { t: 'p', c: 'The app pairs a one-tap daily tracker with a personalised goal calculator (HydroCalc), smart reminders, and a non-judgmental weekly insights screen. This mock case study showcases my end-to-end UX process — from research and journeys to wireframes and high-fidelity UI.' },
+          { t: 'p', c: 'The app pairs a one-tap daily tracker with a personalized goal calculator (HydroCalc), smart reminders, and a non-judgmental weekly insights screen. This mock case study showcases my end-to-end UX process — from research and journeys to wireframes and high-fidelity UI.' },
           { t: 'metrics', c: [
             { v: '5', l: 'User interviews' },
             { v: '5+', l: 'Screens designed' },
@@ -136,7 +136,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
         body: [
           { t: 'p', c: 'Most people know hydration matters, but consistently forget to drink water throughout the day — especially during deep work or back-to-back meetings. People also have no idea how much water they personally need. A one-size-fits-all "8 glasses a day" rule ignores factors like body weight, activity level.' },
           { t: 'pull', c: '"I download these apps, log water for two days, then forget. By Friday I\'ve uninstalled it."', cite: 'P3, remote worker' },
-          { t: 'p', c: 'The opportunity: Design a hydration companion that feels calm and frictionless — one that calculates a personalised daily goal, makes logging water a 2-second gesture, delivers smart reminders, and leverages weekly data to build lasting habits over time.' },
+          { t: 'p', c: 'The opportunity: Design a hydration companion that feels calm and frictionless — one that calculates a personalized daily goal, makes logging water a 2-second gesture, delivers smart reminders, and leverages weekly data to build lasting habits over time.' },
         ],
       },
       {
@@ -310,7 +310,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
     thumb: 'gor',
     glyph: '✈',
     heroImg: 'goRound/gor.svg',
-    lede: 'An all-in-one travel app for planning trips, booking stays and transport, with an AI assistant — Redna — that personalises itineraries and manages your journey.',
+    lede: 'An all-in-one travel app for planning trips, booking stays and transport, with an AI assistant — Redna — that personalizes itineraries and manages your journey.',
     tags: ['UX/UI', 'Mobile', 'AI', 'Travel'],
     meta: [
       { k: 'Role', v: 'UX/UI Designer (solo)' },
@@ -338,7 +338,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
             c: {
               problem: 'Travelers struggle to plan trips because they must use multiple apps for inspiration, planning, and booking, which causes decision fatigue and fragmented experiences.',
               solutionLead: 'Go Round',
-              solution: 'We propose a mood-based travel planning app that unifies discovery, itinerary building, and booking into one seamless experience. By starting with user intent (travel mood), providing smart auto-generated itineraries, and offering a calm, guided interface, the app simplifies trip planning and supports users before, during, and after their journey.',
+              solution: 'proposes a mood-based travel planning app that unifies discovery, itinerary building, and booking into one seamless experience. By starting with user intent (travel mood), providing smart auto-generated itineraries, and offering a calm, guided interface, the app simplifies trip planning and supports users before, during, and after their journey.',
             },
           },
           { t: 'pull', c: '"I open Maps, Booking, Skyscanner, IRCTC and a Notes doc. By the time I\'ve booked, I\'m already exhausted."', cite: 'P2, frequent traveller' },
@@ -444,19 +444,6 @@ export const caseStudies: Record<string, CaseStudyData> = {
         ],
       },
       {
-        id: 'design',
-        eyebrow: 'Visual & interaction',
-        title: 'Design decisions',
-        body: [
-          { t: 'cards', c: [
-            { i: '✦', h: 'Redna as a panel, not a popup', p: 'AI sits in a persistent right-rail panel on tablet, bottom sheet on phone — never a modal that hijacks the trip.' },
-            { i: '◇', h: 'Reasoning chips', p: 'Each AI suggestion shows a "why" chip — saves doubt, builds trust.' },
-            { i: '⊕', h: 'One-tap accept-or-tweak', p: 'Every itinerary item has Accept / Swap / Remove. No long-form rebuilding.' },
-            { i: '⏱', h: 'Companion mode auto-flips', p: 'On trip-day, the home tab swaps to today\'s schedule + map.' },
-          ]},
-        ],
-      },
-      {
         id: 'design-process',
         eyebrow: 'Design process',
         title: 'Wireframes',
@@ -520,7 +507,6 @@ export const caseStudies: Record<string, CaseStudyData> = {
         eyebrow: 'Closing',
         title: 'Reflections',
         body: [
-          { t: 'p', c: 'Conversational planning works <strong>only if the UI honours it</strong> — chips, accept/swap, visible reasoning. Pure chat without scaffolding falls back into "another ChatGPT wrapper" land.' },
           { t: 'p', c: 'Future explorations: group trips with multi-user Redna sessions, and offline companion mode for low-signal regions.' },
         ],
       },
@@ -535,7 +521,7 @@ export const homeCases: HomeCase[] = [
     kind: 'Mobile · UX Case Study',
     thumb: 'h2o',
     glyph: '💧',
-    desc: 'A health-tech mobile app that makes daily hydration effortless through personalised goals, smart logging, and weekly habit insights.',
+    desc: 'A health-tech mobile app that makes daily hydration effortless through personalized goals, smart logging, and weekly habit insights.',
     tags: ['UX/UI', 'Mobile', 'Figma'],
   },
   {
@@ -544,7 +530,7 @@ export const homeCases: HomeCase[] = [
     kind: 'Travel · UX Case Study',
     thumb: 'gor',
     glyph: '✈',
-    desc: 'An all-in-one travel app for planning trips, booking stays and transport, with an AI assistant — Redna — to personalise itineraries.',
+    desc: 'An all-in-one travel app for planning trips, booking stays and transport, with an AI assistant — Redna — to personalize itineraries.',
     tags: ['UX/UI', 'AI', 'Mobile'],
   },
 ];

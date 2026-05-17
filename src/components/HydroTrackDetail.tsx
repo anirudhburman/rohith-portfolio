@@ -11,7 +11,7 @@ export default function HydroTrackDetail({ navigate: _navigate }: Props) {
         <div className="htd-hero-right">
           <h1 className="htd-hero-title">HydroTrack</h1>
           <p className="htd-hero-subtitle">
-            A health-tech mobile app that makes daily hydration effortless through personalised goals, smart logging, and weekly habit insights.
+            A health-tech mobile app that makes daily hydration effortless through personalized goals, smart logging, and weekly habit insights.
           </p>
           <div className="htd-pills">
             <span className="htd-pill">UX/UI</span>
@@ -71,7 +71,7 @@ export default function HydroTrackDetail({ navigate: _navigate }: Props) {
                 <div className="htd-card-dot htd-card-dot--green" />
                 <h3 className="htd-card-title">The opportunity</h3>
                 <p className="htd-card-body">
-                  Design a hydration companion that feels calm and frictionless — one that calculates a personalised daily goal, makes logging water a 2-second gesture, delivers smart reminders, and leverages weekly data to build lasting habits over time.
+                  Design a hydration companion that feels calm and frictionless — one that calculates a personalized daily goal, makes logging water a 2-second gesture, delivers smart reminders, and leverages weekly data to build lasting habits over time.
                 </p>
               </div>
             </div>

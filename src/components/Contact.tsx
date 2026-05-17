@@ -23,7 +23,7 @@ export default function Contact() {
         </div>
 
         <div className="footer">
-          <div>© 2025 Rohith. Designed & built with care.</div>
+          <div>© {new Date().getFullYear()} Rohith. Designed & built with care.</div>
           <a
             className="back-top"
             href="#top"
