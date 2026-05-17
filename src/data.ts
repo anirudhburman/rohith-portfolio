@@ -124,7 +124,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
           { t: 'p', c: 'The app pairs a one-tap daily tracker with a personalised goal calculator (HydroCalc), smart reminders, and a non-judgmental weekly insights screen. This mock case study showcases my end-to-end UX process — from research and journeys to wireframes and high-fidelity UI.' },
           { t: 'metrics', c: [
             { v: '5', l: 'User interviews' },
-            { v: '12', l: 'Screens designed' },
+            { v: '5+', l: 'Screens designed' },
             { v: '4 wks', l: 'End-to-end' },
           ]},
         ],
@@ -159,7 +159,6 @@ export const caseStudies: Record<string, CaseStudyData> = {
             { i: '03', h: 'Logging fatigue', p: 'Multi-tap entry kills habits. Users wanted ≤2 taps from notification to logged.' },
             { i: '04', h: 'Shame is a churn vector', p: 'Apps that punished missed days got uninstalled within a week.' },
           ]},
-          { t: 'figure', src: 'hydrotrack/empathy-map.png', cap: 'Empathy map synthesising what users say, think, do, and feel around hydration.' },
         ],
       },
       {
@@ -168,6 +167,14 @@ export const caseStudies: Record<string, CaseStudyData> = {
         title: 'Affinity Map',
         body: [
           { t: 'figure', src: 'hydrotrack/affinity-map.svg', cap: 'Five clusters emerged from 38 sticky notes — Memory, Goal Clarity, Logging Speed, Tone, and Context.' },
+        ],
+      },
+      {
+        id: 'empathy-map',
+        eyebrow: 'Empathy',
+        title: 'Think - Does - Feel',
+        body: [
+          { t: 'figure', src: 'hydrotrack/empathy-map.png', cap: 'Empathy map synthesising what users say, think, do, and feel around hydration.' },
         ],
       },
       {
@@ -198,7 +205,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
       },
       {
         id: 'ux-map',
-        eyebrow: 'Ideat',
+        eyebrow: 'Ideate',
         title: 'User Experience Map',
         body: [
           { t: 'figure', src: 'hydrotrack/ux-map.png', cap: 'User experience map tracing Arjun\'s journey across five hydration phases.' },
@@ -342,7 +349,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
         eyebrow: 'Approach',
         title: 'Design Process',
         body: [
-          { t: 'p', c: 'From user research to prototype, designed Go Round with user centric approach prioritizing intuive flow,accessibility, and AI driven travel experience.'},
+          { t: 'p', c: 'From user research to prototype, designed Go Round with user centric approach prioritizing intuitive flow, accessibility, and AI driven travel experience.'},
           { t: 'design-process', c: {
             rows: [
               [
@@ -363,14 +370,14 @@ export const caseStudies: Record<string, CaseStudyData> = {
         eyebrow: 'Discovery',
         title: 'Research',
         body: [
-          { t: 'p', c: 'To identify the strengths and weakness of the established  apps in the market. I conducted an in depth competitive analysis on two well-known  apps, Airbnb & MakeMyTrip.' },
+          { t: 'p', c: 'To identify the strengths and weaknesses of the established apps in the market. I conducted an in-depth competitive analysis on two well-known apps, Airbnb & MakeMyTrip.' },
           { t: 'figure', src: 'goRound/competitive-matrix.png', cap: 'Competitive matrix across planning depth, AI use, and end-to-end booking.' },
           { t: 'key-insight', c: {
             heading: 'Key Insight',
             items: [
-              'Allow user to choose destination according to there mood which makes user to select there travel without confusion',
-              'Navigates user  End-to- End from Discovering Destination select Stay and Book transportation',
-              "Go-round help, user to Plan there trip itinerary with Built- in AI Support. 'Redna'",
+              'Allow user to choose destination according to their mood which makes user to select their travel without confusion',
+              'Navigates user End-to-End from Discovering Destination, select Stay and Book transportation',
+              "Go-round helps user to Plan their trip itinerary with Built-in AI Support 'Redna'",
             ],
           }},
         ],
@@ -388,8 +395,8 @@ export const caseStudies: Record<string, CaseStudyData> = {
         eyebrow: 'User research',
         title: 'Affinity Mapping',
         body: [
-          { t: 'p', c: 'After the interviews, I\'ve analyzed the Data collected, by arranging the similar information\'s into a specific set of separate groups by using the process called affinity mapping. This helped me in categorizing the insights that stood out, which gave me possible solutions and pain points more clearly and turning them into design opportunities' },
-          { t: 'figure', src: 'goRound/affinity-mapping.svg', cap: 'Affinity map sumarizing the User Statement, Goals and the Pain points.' },
+          { t: 'p', c: 'After the interviews, I\'ve analyzed the Data collected, by arranging the similar information into a specific set of separate groups by using the process called affinity mapping. This helped me in categorizing the insights that stood out, which gave me possible solutions and pain points more clearly and turning them into design opportunities' },
+          { t: 'figure', src: 'goRound/affinity-mapping.svg', cap: 'Affinity map summarizing the User Statement, Goals and the Pain points.' },
         ],
       },
       {
@@ -397,7 +404,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
         eyebrow: '',
         title: 'Define',
         body: [
-          { t: 'p', c: 'On the basis of pattern discovered in affinity mapping, I\'ve created couple of USER PERSONAS which represents the typical user of this apps. considering their pain points, goals and emotional needs i can able to deduce a typical journey that a user takes and will guide me in making decisions for designing the app' },
+          { t: 'p', c: 'On the basis of pattern discovered in affinity mapping, I\'ve created a couple of USER PERSONAS which represents the typical user of this app. Considering their pain points, goals and emotional needs I am able to deduce a typical journey that a user takes and will guide me in making decisions for designing the app' },
         ],
       },
       {
@@ -423,7 +430,7 @@ export const caseStudies: Record<string, CaseStudyData> = {
         eyebrow: 'Journey',
         title: 'User Journey Map',
         body: [
-          { t: 'p', c: 'User journey Map was created on the basis of MARCUS TAYLOR persona. Emotions expressed at different stages shows happiness, sad and frustration of a user. by this activity we can know a user\'s response, behavior and pain points at different stages of process.we see that whenever the curve is moving down there we got opportunities for looking into the matter for why its moving negative and try solving problem to lead a better experience throughout the journey' },
+          { t: 'p', c: 'User journey Map was created on the basis of MARCUS TAYLOR persona. Emotions expressed at different stages show happiness, sadness and frustration of a user. By this activity we can know a user\'s response, behavior and pain points at different stages of process. We see that whenever the curve is moving down there we got opportunities for looking into the matter for why it\'s moving negative and try solving problem to lead a better experience throughout the journey' },
           { t: 'figure', src: 'goRound/journey.png', cap: 'Journey Map highlights the Action, Pain Point, Emotion, Opportunity in a UX.' },
         ],
       },

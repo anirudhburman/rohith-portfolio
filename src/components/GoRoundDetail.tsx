@@ -14,7 +14,7 @@ export default function GoRoundDetail({ navigate: _navigate }: Props) {
         <div className="grd-hero-circle grd-hero-circle--sm4" />
         <div className="grd-hero-inner">
           <h1 className="grd-hero-title">GO Round</h1>
-          <p className="grd-hero-subtitle">Easy your trip with AI planner</p>
+          <p className="grd-hero-subtitle">Ease your trip with an AI planner</p>
         </div>
         <div className="grd-hero-phones">
           <div className="grd-phone grd-phone--left" />
@@ -100,7 +100,7 @@ export default function GoRoundDetail({ navigate: _navigate }: Props) {
         <section className="grd-section">
           <h2 className="grd-section-heading">Empathize</h2>
           <p className="grd-body-text">
-            To gain insights by understanding the user&apos;s Behavior and their needs, how the app should be designed. Conducted interview with number of people where a set of open ended questions were asked in order to know how they respond and make decision, and to understand their pain point depending on their responses by empathizing with them.
+            To gain insights by understanding the user&apos;s behavior and their needs, how the app should be designed. Conducted interviews with a number of people where a set of open-ended questions were asked in order to know how they respond and make decisions, and to understand their pain points depending on their responses by empathizing with them.
           </p>
         </section>
 
@@ -108,11 +108,11 @@ export default function GoRoundDetail({ navigate: _navigate }: Props) {
         <section className="grd-section">
           <h2 className="grd-section-heading">User Statement</h2>
           <div className="grd-statements-grid">
-            <div className="grd-statement-card">&ldquo;I dont want plan everything. Just tell me whats best.&rdquo;</div>
+            <div className="grd-statement-card">&ldquo;I don&apos;t want to plan everything. Just tell me what&apos;s best.&rdquo;</div>
             <div className="grd-statement-card">&ldquo;After booking, the app is useless.&rdquo;</div>
-            <div className="grd-statement-card">&ldquo;I use Instagram for ideas, Google for place, Airbnb for stay and MakeMyTrip for flights&rdquo;</div>
-            <div className="grd-statement-card">&ldquo;There are too many option. I don&apos;t know where to start&rdquo;</div>
-            <div className="grd-statement-card">&ldquo;Need to switch between multiple app for one trip&rdquo;</div>
+            <div className="grd-statement-card">&ldquo;I use Instagram for ideas, Google for places, Airbnb for stay and MakeMyTrip for flights&rdquo;</div>
+            <div className="grd-statement-card">&ldquo;There are too many options. I don&apos;t know where to start&rdquo;</div>
+            <div className="grd-statement-card">&ldquo;Need to switch between multiple apps for one trip&rdquo;</div>
           </div>
         </section>
 

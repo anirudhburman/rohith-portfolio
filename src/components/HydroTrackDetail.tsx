@@ -164,7 +164,7 @@ export default function HydroTrackDetail({ navigate: _navigate }: Props) {
 
         {/* User Experience Map */}
         <section className="htd-section">
-          <p className="htd-sub-label">Ideat</p>
+          <p className="htd-sub-label">Ideate</p>
           <h2 className="htd-section-heading">User Experience Map</h2>
           <img src="hydrotrack/ux-map.png" alt="User experience map" className="htd-section-img" />
         </section>
